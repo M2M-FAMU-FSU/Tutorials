@@ -5,7 +5,7 @@ function rho = rho(x,t,rho_300K,process_params,L_rod) %Density
     r_b = (process_params.laser_radius);
 
     if(x>(laser_loc+r_b)) %Assuming Laser Movement from Left to Right
-        rho = 0;
+        rho = 0; 
     else
         rho = rho_300K; 
     end
